@@ -52,7 +52,7 @@ client.on('guildMemberRemove', member => {
 	  channel.send(Embed);
   });
 
-const config = require("./config.json");
+const config = require("./misc/config.json");
 client.config = config;
 
 fs.readdir("./events/", (err, files) => {
